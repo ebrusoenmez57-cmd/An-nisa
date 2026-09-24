@@ -40,7 +40,18 @@
                 Schritt für Schritt auf unserem Weg.
             </p>
         </section>
+        <section class="notifications">
+            <div>
+                <h2>Bleib auf dem Laufenden</h2>
+                <p>
+                    Erhalte wertvolle Impulse und Erinnerungen direkt auf dein Gerät.
+                </p>
+            </div>
 
+            <button id="notificationButton">
+                Benachrichtigungen aktivieren
+            </button>
+        </section>
         <section class="cards">
 
             <a href="#" class="card">
@@ -80,7 +91,15 @@
             </a>
 
         </section>
-
+<script>
+    document.getElementById("notificationButton").addEventListener("click", async function() {
+        if (window.OneSignalDeferred) {
+            OneSignalDeferred.push(async function(OneSignal) {
+                await OneSignal.Notifications.requestPermission();
+            });
+        }
+    });
+</script>
     </main>
 
     <footer>
