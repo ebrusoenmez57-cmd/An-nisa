@@ -60,6 +60,50 @@ main {
     color: #766f67;
 }
 
+/* Benachrichtigungen */
+
+.notifications {
+    margin: 0 0 22px;
+    padding: 20px;
+    background: #8fa084;
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: 0 6px 20px rgba(63, 58, 52, 0.08);
+}
+
+.notifications h2 {
+    margin: 0 0 7px;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+.notifications p {
+    margin: 0 0 16px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.notifications button {
+    width: 100%;
+    padding: 13px 16px;
+    border: none;
+    border-radius: 12px;
+    background: #fffdf9;
+    color: #66745f;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.notifications button:active {
+    transform: scale(0.98);
+}
+
+/* Menü-Karten */
+
 .cards {
     display: flex;
     flex-direction: column;
