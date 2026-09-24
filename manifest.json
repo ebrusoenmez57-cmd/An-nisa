@@ -6,5 +6,12 @@
   "display": "standalone",
   "background_color": "#f7f3ed",
   "theme_color": "#8fa084",
-  "lang": "de"
+  "lang": "de",
+  "icons": [
+    {
+      "src": "/IMG_20260923_215645.jpg",
+      "sizes": "1080x1004",
+      "type": "image/jpeg"
+    }
+  ]
 }
