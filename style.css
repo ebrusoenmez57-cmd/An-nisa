@@ -159,14 +159,34 @@ main {
     color: #a8afa2;
 }
 
-footer {
-    padding: 10px 20px 30px;
+/* Heute */
+
+.daily-card {
+    margin: 5px 0 25px;
+    padding: 30px 24px;
+    background: #fffdf9;
+    border: 1px solid #e7e0d6;
+    border-radius: 22px;
     text-align: center;
+    box-shadow: 0 6px 20px rgba(63, 58, 52, 0.05);
 }
 
-footer p {
-    margin: 0;
+.daily-label {
+    margin: 0 0 18px;
     font-family: Arial, sans-serif;
     font-size: 11px;
-    color: #a29a91;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8fa084;
 }
+
+.daily-card h2 {
+    margin: 0;
+    font-size: 23px;
+    line-height: 1.6;
+    font-weight: normal;
+}
+
+.source {
+    margin: 20px 0 0;
+    font-family: Arial
