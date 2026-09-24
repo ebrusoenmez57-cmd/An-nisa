@@ -3,24 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>An-Nisā</title>
+
     <link rel="stylesheet" href="style.css">
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#f7f3ed">
+    <meta name="theme-color" content="#8fa084">
+
+    <!-- OneSignal Web Push -->
     <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
     <script>
-  window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(async function(OneSignal) {
-    await OneSignal.init({
-      appId: "bb36afcc-2657-42ec-9877-1e321fe1396b"
-    });
-  });
-</script>
+        window.OneSignalDeferred = window.OneSignalDeferred || [];
+
+        OneSignalDeferred.push(async function(OneSignal) {
+            await OneSignal.init({
+                appId: "bb36afcc-2657-42ec-9877-1e321fe1396b"
+            });
+        });
+    </script>
 </head>
+
 <body>
 
-    <h1>An-Nisā</h1>
-    <p>As-Salamu Alaikum, Willkommen bei An-Nisā.</p>
+    <header class="header">
+        <div class="logo">An-Nisā</div>
+        <div class="subtitle">Gemeinsam. Lernen. Wachsen.</div>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <p class="small-title">Willkommen bei An-Nisā</p>
+            <h1>Ein Ort für Frauen,<br>die wachsen möchten.</h1>
+            <p>
+                Wissen, Inspiration und Gemeinschaft –
+                Schritt für Schritt auf unserem Weg.
+            </p>
+        </section>
+
+        <section class="cards">
+
+            <a href="#" class="card">
+                <span class="icon">☀️</span>
+                <div>
+                    <h2>Heute</h2>
+                    <p>Dein täglicher Impuls</p>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="#" class="card">
+                <span class="icon">📖</span>
+                <div>
+                    <h2>Fiqh-Impulse</h2>
+                    <p>Wissen für deinen Alltag</p>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="#" class="card">
+                <span class="icon">🌿</span>
+                <div>
+                    <h2>Motivation</h2>
+                    <p>Worte, die dich begleiten</p>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+            <a href="#" class="card">
+                <span class="icon">🥣</span>
+                <div>
+                    <h2>Rezepte</h2>
+                    <p>Einfach, bewusst und lecker</p>
+                </div>
+                <span class="arrow">›</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>An-Nisā · Für Frauen, miteinander und füreinander</p>
+    </footer>
 
 </body>
 </html>
