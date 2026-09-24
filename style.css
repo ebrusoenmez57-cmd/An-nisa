@@ -1,16 +1,128 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f7f3ed;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f3ed;
     color: #3f3a34;
+}
+
+.header {
+    padding: 32px 24px 20px;
     text-align: center;
 }
 
-h1 {
-    margin-top: 100px;
-    font-size: 42px;
+.logo {
+    font-size: 34px;
+    letter-spacing: 1px;
+    color: #66745f;
 }
 
-p {
+.subtitle {
+    margin-top: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    color: #8a8177;
+}
+
+main {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 10px 20px 40px;
+}
+
+.welcome {
+    padding: 35px 10px 30px;
+    text-align: center;
+}
+
+.small-title {
+    margin-bottom: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #8fa084;
+}
+
+.welcome h1 {
+    margin: 0;
+    font-size: 32px;
+    line-height: 1.25;
+    font-weight: normal;
+}
+
+.welcome p:last-child {
+    max-width: 450px;
+    margin: 18px auto 0;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #766f67;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 19px;
+    background: #fffdf9;
+    border: 1px solid #e7e0d6;
+    border-radius: 18px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 4px 15px rgba(63, 58, 52, 0.04);
+}
+
+.card:active {
+    transform: scale(0.98);
+}
+
+.icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #edf0e9;
+    border-radius: 14px;
+    font-size: 22px;
+    flex-shrink: 0;
+}
+
+.card h2 {
+    margin: 0 0 5px;
     font-size: 18px;
+    font-weight: normal;
+}
+
+.card p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #8a8177;
+}
+
+.arrow {
+    margin-left: auto;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: #a8afa2;
+}
+
+footer {
+    padding: 10px 20px 30px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #a29a91;
 }
