@@ -1,0 +1,10 @@
+{
+  "name": "An-Nisā",
+  "short_name": "An-Nisā",
+  "description": "Die Frauenplattform von An-Nisā",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f7f3ed",
+  "theme_color": "#f7f3ed",
+  "lang": "de"
+}
