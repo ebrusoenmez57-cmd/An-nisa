@@ -34,15 +34,23 @@
 
         <section class="welcome">
             <p class="small-title">Willkommen bei An-Nisā</p>
-            <h1>Ein Ort für Frauen,<br>die wachsen möchten.</h1>
+
+            <h1>
+                Ein Ort für Frauen,<br>
+                die wachsen möchten.
+            </h1>
+
             <p>
                 Wissen, Inspiration und Gemeinschaft –
                 Schritt für Schritt auf unserem Weg.
             </p>
         </section>
+
         <section class="notifications">
+
             <div>
                 <h2>Bleib auf dem Laufenden</h2>
+
                 <p>
                     Erhalte wertvolle Impulse und Erinnerungen direkt auf dein Gerät.
                 </p>
@@ -51,60 +59,72 @@
             <button id="notificationButton">
                 Benachrichtigungen aktivieren
             </button>
+
         </section>
+
         <section class="cards">
 
             <a href="#" class="card">
                 <span class="icon">☀️</span>
+
                 <div>
                     <h2>Heute</h2>
                     <p>Dein täglicher Impuls</p>
                 </div>
+
                 <span class="arrow">›</span>
             </a>
 
             <a href="#" class="card">
                 <span class="icon">📖</span>
+
                 <div>
                     <h2>Fiqh-Impulse</h2>
                     <p>Wissen für deinen Alltag</p>
                 </div>
+
                 <span class="arrow">›</span>
             </a>
 
             <a href="#" class="card">
                 <span class="icon">🌿</span>
+
                 <div>
                     <h2>Motivation</h2>
                     <p>Worte, die dich begleiten</p>
                 </div>
+
                 <span class="arrow">›</span>
             </a>
 
             <a href="#" class="card">
                 <span class="icon">🥣</span>
+
                 <div>
                     <h2>Rezepte</h2>
                     <p>Einfach, bewusst und lecker</p>
                 </div>
+
                 <span class="arrow">›</span>
             </a>
 
         </section>
-<script>
-    document.getElementById("notificationButton").addEventListener("click", async function() {
-        if (window.OneSignalDeferred) {
-            OneSignalDeferred.push(async function(OneSignal) {
-                await OneSignal.Notifications.requestPermission();
-            });
-        }
-    });
-</script>
+
     </main>
 
     <footer>
         <p>An-Nisā · Für Frauen, miteinander und füreinander</p>
     </footer>
+
+    <script>
+        document.getElementById("notificationButton").addEventListener("click", async function() {
+            if (window.OneSignalDeferred) {
+                OneSignalDeferred.push(async function(OneSignal) {
+                    await OneSignal.Notifications.requestPermission();
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>
